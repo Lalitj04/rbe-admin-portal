@@ -2,8 +2,17 @@ package com.rbe.adminPortal.service;
 
 import com.rbe.adminPortal.dto.Element;
 import com.rbe.adminPortal.dto.QuestionObject;
-import org.springframework.stereotype.Component;
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+import org.apache.poi.xwpf.usermodel.XWPFPicture;
+import org.apache.poi.xwpf.usermodel.XWPFRun;
+import org.apache.xmlbeans.XmlCursor;
+import org.apache.xmlbeans.XmlObject;
+import org.openxmlformats.schemas.officeDocument.x2006.math.CTOMath;
+import org.openxmlformats.schemas.officeDocument.x2006.math.CTOMathPara;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.sql.rowset.serial.SerialBlob;
 import java.io.InputStream;
